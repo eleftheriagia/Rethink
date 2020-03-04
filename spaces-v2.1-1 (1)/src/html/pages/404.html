@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Spaces - 404 Not Found Page"
+    })
+</head>
+
+<body>
+        <main>
+            <section class="section min-vh-100">
+                <div class="container py-5">
+                    <div class="row text-center d-flex align-items-center justify-content-center">
+                        <div class="col-md-10 d-flex align-items-center">
+                            <div>
+                                <a href="../../index.html">
+                                    <img class="img-fluid w-75" src="../../assets/img/404-error.svg" alt="404-image">
+                                </a>
+                                <h1 class="mt-5 font-weight-light">Page not <span class="font-weight-bolder text-primary">found</span></h1>
+                                <p class="lead my-4">Oops! Looks like you followed a bad link. If you think this is a
+                                    problem with us, please tell us.</p>
+                                <a class="btn btn-primary animate-hover" href="../../index.html"><i class="fas fa-chevron-left mr-3 pl-2 animate-left-3"></i>Go
+                                    back home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @@include('./_scripts.html', {
+            "path": "../.."
+        })
+
+</body>
+
+</html>

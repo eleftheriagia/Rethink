@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Spaces - My listings"
+    })
+</head>
+
+<body>
+    
+    @@include('./_navigation.html', {
+        "path": "../..",
+        "classes": "navbar-dark navbar-theme-dark"
+    })
+
+    <main>
+        <div class="section section-lg">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs flex-column flex-md-row shadow-soft border-soft" id="nav-tab"
+                                role="tablist">
+                                <a href="./my-account.html" class="nav-item nav-link text-dark"><i class="far fa-user mr-2"></i>My account</a>
+                                <a href="./my-listings.html" class="nav-item text-dark nav-link active"><i class="far fa-list-alt mr-2"></i>My listings</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card shadow-soft border p-4">
+                            <table class="table table-responsive font-small">
+                                <thead class="thead-inverse">
+                                    <tr>
+                                        <th class="h6 py-4 border-0">ID</th>
+                                        <th class="h6 py-4 border-0">Name</th>
+                                        <th class="h6 py-4 border-0">Price</th>
+                                        <th class="h6 py-4 border-0">Location</th>
+                                        <th class="h6 py-4 border-0">Requests</th>
+                                        <th class="h6 py-4 border-0">Impressions</th>
+                                        <th class="h6 py-4 border-0">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="option h6 font-weight-light">#12</td>
+                                        <td><a href="./edit-space.html">L'atelier Vancouver Coworking Space</a></td>
+                                        <td>Vancouver, Canada</td>
+                                        <td>$200/month</td>
+                                        <td>2</td>
+                                        <td>1232</td>
+                                        <td>
+                                            <a href="./edit-space.html" class="text-dark" data-toggle="tooltip" title="Edit space"><i class="far fa-edit mr-2"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-confirm-delete" class="text-danger"><i class="far fa-trash-alt" data-toggle="tooltip" title="Delete space"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="option h6 font-weight-light">#13</td>
+                                        <td><a href="./edit-space.html">Meeting Office Space</a></td>
+                                        <td>New York, United States</td>
+                                        <td>$650/month</td>
+                                        <td>31</td>
+                                        <td>9316</td>
+                                        <td>
+                                            <a href="./edit-space.html" class="text-dark" data-toggle="tooltip" title="Edit space"><i class="far fa-edit mr-2"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-confirm-delete" class="text-danger"><i class="far fa-trash-alt" data-toggle="tooltip" title="Delete space"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="option h6 font-weight-light">#23</td>
+                                        <td><a href="./edit-space.html">Conference Room</a></td>
+                                        <td>Timisoara, Romania</td>
+                                        <td>$100/month</td>
+                                        <td>0</td>
+                                        <td>53</td>
+                                        <td>
+                                            <a href="./edit-space.html" class="text-dark" data-toggle="tooltip" title="Edit space"><i class="far fa-edit mr-2"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-confirm-delete" class="text-danger"><i class="far fa-trash-alt" data-toggle="tooltip" title="Delete space"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="option h6 font-weight-light">#432</td>
+                                        <td><a href="./edit-space.html">Lifestyle Space</a></td>
+                                        <td>Paris, France</td>
+                                        <td>$300/month</td>
+                                        <td>2</td>
+                                        <td>121</td>
+                                        <td>
+                                            <a href="./edit-space.html" class="text-dark" data-toggle="tooltip" title="Edit space"><i class="far fa-edit mr-2"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-confirm-delete" class="text-danger"><i class="far fa-trash-alt" data-toggle="tooltip" title="Delete space"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="option h6 font-weight-light">#1232</td>
+                                        <td><a href="./edit-space.html">Private Space</a></td>
+                                        <td>London, United Kingdom</td>
+                                        <td>$400/month</td>
+                                        <td>4</td>
+                                        <td>3754</td>
+                                        <td>
+                                            <a href="./edit-space.html" class="text-dark" data-toggle="tooltip" title="Edit space"><i class="far fa-edit mr-2"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#modal-confirm-delete" class="text-danger"><i class="far fa-trash-alt" data-toggle="tooltip" title="Delete space"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modal-confirm-delete" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-delete" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <p class="modal-title text-center" id="modal-title-default">Are you sure you want to delete this space?</p> 
+                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer border-0 pt-2 d-flex justify-content-center">
+                    <button data-dismiss="modal" class="btn btn-sm btn-outline-dark mr-2">Cancel</button>
+                    <button class="btn btn-sm btn-dark">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('./_footer.html', {
+        "path": "../.."
+    })
+
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+
+</body>
+
+</html>

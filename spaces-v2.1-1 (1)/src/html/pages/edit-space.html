@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+    "path": "../..",
+    "title": "Spaces - Edit space"
+    })
+</head>
+
+<body>
+
+    @@include('./_navigation.html', {
+    "path": "../..",
+    "classes": "navbar-dark navbar-theme-dark"
+    })
+
+    <main>
+        <div class="section section-lg">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs flex-column flex-md-row shadow-soft border-soft" id="nav-tab"
+                                role="tablist">
+                                <a href="./my-account.html" class="nav-item nav-link text-dark"><i
+                                        class="far fa-user mr-2"></i>My account</a>
+                                <a href="./my-listings.html" class="nav-item text-dark nav-link"><i
+                                        class="far fa-list-alt mr-2"></i>My listings</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4">
+                                <h5 class="mb-4">General information</h5>
+                                <div class="form-group">
+                                    <label for="firstname">Title</label>
+                                    <input type="text" value="L'atelier Vancouver Coworking" class="form-control shadow-soft" id="firstname"
+                                        placeholder="Space title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+                                    <input type="text" value="26, Vancouver, BC, Canada - 324578" class="form-control shadow-soft" id="location"
+                                        placeholder="Search for location" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="currency">Currency</label>
+                                            <select class="custom-select" id="currency">
+                                                <option value="USD">USD</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="GBP">GBP</option>
+                                                <option value="AUD">AUD</option>
+                                                <option value="CNY">CNY</option>
+                                                <option value="JPY">JPY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="price">Monthly price</label>
+                                            <input type="number" value="250" class="form-control shadow-soft" id="price"
+                                                placeholder="Ex. 1200" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="term">Minimum term</label>
+                                            <select class="custom-select" id="term">
+                                                <option value="d">day</option>
+                                                <option value="m">month</option>
+                                                <option value="y" selected>year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="term_amount">Amount</label>
+                                            <input type="number" value="1" class="form-control shadow-soft" id="term_amount"
+                                                placeholder="Ex. 20" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="sqfeet">Square feet</label>
+                                            <input type="number" value="180" class="form-control shadow-soft" id="sqfeet"
+                                                placeholder="Ex. 80" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="people">People capacity</label>
+                                            <input type="number" value="15" class="form-control shadow-soft" id="people"
+                                                placeholder="Ex. 20" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="type">Space type</label>
+                                            <select class="custom-select" id="type">
+                                                <option value="meeting" selected>meeting</option>
+                                                <option value="work">work</option>
+                                                <option value="events">events</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea rows="10" class="form-control shadow-soft" id="description"
+                                        placeholder="Description" required>L'atelier is the brainchild of 3 innovative guys that want to create a working hub for the local community. The plan is to offer a cool place to hang out with other creative souls and let the brainwaves go berserk.
+
+The guys were the group behind the Startup Weekend Vancouver, Startup Pirates Vancouver and Startup Coffee Vancouver, so they are no fools and have plenty of experience in startups and community growth. This project is another notch into creating Vancouver as a regional startup hub.
+
+Cowork Vancouver is aiming to attract the techies, the freelance developers or anyone wishing to get involved in the startup scene - really there are no exclusions of bodies who may want a desk - the founders just want a community of entrepreneurs and geeks to mingle with.</textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-primary btn-dark mt-2 animate-up-2"
+                                            type="submit">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4 mb-lg-0">
+                                <h6 class="mb-4">Amenities</h6>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="basic">Basic</label>
+                                                <select multiple class="custom-select" id="basic">
+                                                    <option selected>High-Speed WiFi</option>
+                                                    <option selected>Air Conditioning</option>
+                                                    <option selected>Heating</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="seating">Seating</label>
+                                                <select multiple class="custom-select" id="seating">
+                                                    <option selected>Standing Desks</option>
+                                                    <option>Ergonomic Chairs</option>
+                                                    <option>Beanbags</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="community">Community</label>
+                                                <select multiple class="custom-select" id="community">
+                                                    <option>Events</option>
+                                                    <option>Community Lunches</option>
+                                                    <option selected>Workshops</option>
+                                                    <option selected>Community Drinks</option>
+                                                    <option selected>Facebook Group for Members</option>
+                                                    <option>Mentorship Programs</option>
+                                                    <option>Pitching events</option>
+                                                    <option>Accelerator programs</option>
+                                                    <option>Toastmasters</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="facilities">Facilities</label>
+                                                <select multiple class="custom-select" id="facilities">
+                                                    <option selected>Kitchen</option>
+                                                    <option selected>Skype Room</option>
+                                                    <option>Makerspace</option>
+                                                    <option selected>Personal Lockers</option>
+                                                    <option selected>Phone Booth</option>
+                                                    <option>Event Space For Rent</option>
+                                                    <option>Nearby Airbnb</option>
+                                                    <option>Onsite Airbnb</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="equipment">Equipment</label>
+                                                <select multiple class="custom-select" id="equipment">
+                                                    <option selected>Printer</option>
+                                                    <option selected>3D Printer</option>
+                                                    <option>Projector</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="transportation">Transportation</label>
+                                                <select multiple class="custom-select" id="transportation">
+                                                    <option selected>5 Minute Walk From Public Transit</option>
+                                                    <option selected>10 Minute Walk From Metro Station</option>
+                                                    <option>Bike Parking</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="relax">Relaxation zones</label>
+                                                <select multiple class="custom-select" id="relax">
+                                                    <option selected>Outdoor Terrace</option>
+                                                    <option>Lounge / Chill Area</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <label for="caffeine">Caffeine Fix</label>
+                                                <select multiple class="custom-select" id="caffeine">
+                                                    <option>Free Tea</option>
+                                                    <option>Free coffee</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button class="btn btn-primary btn-dark mt-2 animate-up-2"
+                                                type="submit">Update</button>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4">
+                                <label>Featured image</label>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <div class="profile-image-small fmxw-100 mr-4">
+                                        <img src="../../assets/img/image-office.jpg" alt="Office image">
+                                    </div>
+                                    <div class="custom-file">
+                                        <input id="featured_image" type="file" class="custom-file-input">
+                                        <label class="custom-file-label" for="featured_image">Choose file</label>
+                                    </div>
+                                </div>
+                                <small class="text-gray-500 font-weight-light font-xs d-block mt-2">Image should be at least 500 pixels wide and only *.jpg, *.png and *.jpeg formats are accepted.</small>
+                            </form>
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4">
+                                <label>Gallery</label>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <div class="custom-file">
+                                        <input id="gallery" type="file" class="custom-file-input" multiple>
+                                        <label class="custom-file-label" for="gallery">Choose files</label>
+                                    </div>
+                                </div>
+                                <small class="text-gray-500 font-weight-light font-xs d-block mt-2">Images should be at least 500 pixels wide and only *.jpg, *.png and *.jpeg formats are accepted.</small>
+                                <div class="d-flex flex-wrap justify-content-center mt-4">
+                                    <div class="profile-image-small fmxw-100 mr-3 mb-3">
+                                        <img src="../../assets/img/conference-office.jpg" alt="Office Conference">
+                                    </div>
+                                    <div class="profile-image-small fmxw-100 mr-3 mb-3">
+                                        <img src="../../assets/img/cowork-office.jpg" alt="Office Cowork">
+                                    </div>
+                                    <div class="profile-image-small fmxw-100 mr-3 mb-3">
+                                        <img src="../../assets/img/lifestyle-office.jpg" alt="Office Lifestyle">
+                                    </div>
+                                    <div class="profile-image-small fmxw-100 mr-3 mb-3">
+                                        <img src="../../assets/img/image-office.jpg" alt="Office image">
+                                    </div>
+                                    <div class="profile-image-small fmxw-100 mr-3 mb-3">
+                                        <img src="../../assets/img/meeting-office.jpg" alt="Office Meeting">
+                                    </div>
+                                    <div class="profile-image-small fmxw-100 mr-3 mb-3">
+                                        <img src="../../assets/img/private-office.jpg" alt="Office Private">
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4">
+                                <div class="form-group">
+                                    <label for="video">Video url</label>
+                                    <input type="text" value="https://vimeo.com/40842620" class="form-control shadow-soft" id="video"
+                                        placeholder="Video url" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-primary btn-dark mt-2 animate-up-2 text-right"
+                                            type="submit">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./_footer.html', {
+    "path": "../.."
+    })
+
+    @@include('./_scripts.html', {
+    "path": "../.."
+    })
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Spaces - My account"
+    })
+</head>
+
+<body>
+
+    @@include('./_navigation.html', {
+        "path": "../..",
+        "classes": "navbar-dark navbar-theme-dark"
+    })
+
+    <main>
+        <div class="section section-lg">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs flex-column flex-md-row shadow-soft border-soft" id="nav-tab"
+                                role="tablist">
+                                <a href="./my-account.html" class="nav-item nav-link text-dark active"><i
+                                        class="far fa-user mr-2"></i>My account</a>
+                                <a href="./my-listings.html" class="nav-item text-dark nav-link"><i
+                                        class="far fa-list-alt mr-2"></i>My listings</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="firstname">First name</label>
+                                            <input type="text" class="form-control shadow-soft" id="firstname"
+                                                placeholder="First name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="lastname">Last name</label>
+                                            <input type="text" class="form-control shadow-soft" id="lastname"
+                                                placeholder="Last name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email">Email address</label>
+                                            <input type="email" class="form-control shadow-soft" id="email"
+                                                placeholder="Enter email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="phonenumber">Phone number</label>
+                                            <input type="number" class="form-control shadow-soft" id="phonenumber"
+                                                placeholder="Phone number" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-primary btn-dark mt-2 animate-up-2"
+                                            type="submit">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4 mb-lg-0">
+                                <h6 class="mb-4">Settings</h6>
+                                <div class="custom-control custom-switch mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="promotions">
+                                    <label class="custom-control-label" for="promotions">Promotions</label>
+                                </div>
+                                <div class="custom-control custom-switch mb-2">
+                                    <input type="checkbox" class="custom-control-input" checked id="news">
+                                    <label class="custom-control-label" for="news">Weekly news</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <form action="#" method="post" class="card shadow-soft border p-4 mb-4">
+                                <label>Profile picture</label>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <div class="profile-image-small fmxw-100 mr-4">
+                                        <img src="../../assets/img/team/profile-image-2.jpg"
+                                            class="card-img-top rounded-circle" alt="image">
+                                    </div>
+                                    <div class="custom-file">
+                                        <input id="profile-image" type="file" class="custom-file-input">
+                                        <label class="custom-file-label" for="profile-image">Choose file</label>
+                                    </div>
+                                </div>
+                                <small class="text-gray-500 font-weight-light font-xs d-block mt-2">Image should be
+                                    75x75 pixels and only *.jpg, *.png and *.jpeg formats are accepted.</small>
+                            </form>
+                            <form action="#" method="post" class="card shadow-soft border p-4">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="currentpassword">Current password</label>
+                                            <input type="password" class="form-control shadow-soft" id="currentpassword"
+                                                placeholder="Current password" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="newpassword">New password</label>
+                                            <input type="password" class="form-control shadow-soft" id="newpassword"
+                                                placeholder="New password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-outline-dark mt-2"
+                                            type="submit">Change password</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./_footer.html', {
+        "path": "../.."
+    })
+
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+
+</body>
+
+</html>

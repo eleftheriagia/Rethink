@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Spaces - Submit Space Page"
+    })
+</head>
+
+<body>
+    
+    @@include('./_navigation.html', {
+        "path": "../..",
+        "classes": "navbar-dark navbar-theme-primary"
+    })
+
+    <main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="submit-wizard mt-6 mt-md-0">
+                    <form action="#" method="post" id="spaceSubmitForm">
+                        <div class="slideform-slide justify-content-center align-items-center mt-5">
+                            <div class="slideform-group col-10">
+                                <h3 class="font-normal">Step 1: Register as a owner</h3>
+                                <p class="lead mb-5">You will need to be in an authorised position within your organisation and have details to hand regarding your company. Once you have activated your account you will be able to list your space(s).</p>
+                                <textarea class="form-control my-4" placeholder="Tell coworkers what you love about the space. You can include details about the decor, your amenities, the types of people in your community and the neighbourhood." id="exampleFormControlTextarea" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h3>Step 2: About your business</h3>
+                                <p class="lead mb-5">First tell us who you are and a little bit about your business.</p>
+                                <input class="form-control mb-3" placeholder="Company (Legal name)" type="text">
+                                <input class="form-control mb-3" placeholder="Full name" type="text">
+                                <input class="form-control mb-3" placeholder="Email address" type="email">
+                                <input class="form-control mb-3" placeholder="Your phone number" type="number">
+                                    
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h3>Step 3: Your Business Trading Address</h3>
+                                <p class="lead mb-5">This will be the legal address of where your company operates.</p>
+                                <input class="form-control mb-3" placeholder="Address" type="text">
+                                <input class="form-control mb-3" placeholder="City" type="text">
+                                <input class="form-control mb-3" placeholder="State" type="text">
+                                <input class="form-control mb-3" placeholder="Country" type="text">
+                                <input class="form-control mb-3" placeholder="Postcode/Zip" type="number">
+                                    
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h3>Step 4: Business Verification</h3>
+                                <p class="lead mb-5">Your listings will display a verified badge to let your users know they can trust your listing.</p>
+                                <p>Do you own the building(s) your space(s) reside in?</p>
+                                <div class="options options-list mb-4">
+                                    <label><input type="radio" name="group1"><span>Yes</span></label>
+                                    <label><input type="radio" name="group1"><span>No</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h3>Step 5: Account Type</h3>
+                                <p class="lead mb-5">Choose whether you are listing as a <span class="font-weight-bold">FREE</span>, <span class="font-weight-bold">SILVER</span> or <span class="font-weight-bold">GOLD</span> account and tell us the main currency your company trades in.</p>
+                                <p>Your account type</p>
+                                <div class="options options-buttons my-3">
+                                    <label><input type="radio" name="group4"><span>FREE</span></label>
+                                    <label><input type="radio" name="group4"><span>SILVER</span></label>
+                                    <label><input type="radio" name="group4"><span>GOLD</span></label>
+                                </div> 
+                                <p>Your default currency</p>
+                                <div class="options options-buttons my-3">
+                                    <label><input type="checkbox" name="group3"><span>USD</span></label>
+                                    <label><input type="checkbox" name="group3"><span>GBP</span></label>
+                                    <label><input type="checkbox" name="group3"><span>EUR</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h3>Step 6: Security</h3>
+                                <p class="lead mb-5">Choose a username and password to secure your account.</p>
+                                <input class="form-control mb-3" placeholder="Choose a username (max 60)" type="text">
+                                <input class="form-control mb-3" name="password" placeholder="Choose a password (min 3 - no blank space)" type="password">
+                                <input class="form-control mb-3" name="repeat-password" placeholder="Confirm Password" type="password">
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h3>Step 7: Marketing Preferences</h3>
+                                <p class="lead mb-5">Choose and enter your marketing preferences here.</p>
+                                <p>Would you like to receive our newsletter?</p>
+                                <div class="options options-list mb-4">
+                                    <label><input type="radio" name="group1"><span>Yes</span></label>
+                                    <label><input type="radio" name="group1"><span>No</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group col-12 col-md-8">
+                                <h2>Step 8: Almost done</h2>
+                                <p class="lead mb-5">I agree that the information I have submitted is correct and that I am authorised to enter into a legally binding contract on behalf of the company as listed above.</p>
+                                <div class="options options-buttons mb-4">
+                                    <label><input type="radio" name="group7" value="valid"><span>Yes</span></label>
+                                    <label><input type="radio" name="group7" value="invalid"><span>No</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideform-slide justify-content-center align-items-center">
+                            <div class="slideform-group text-center col-10">
+                                <h2 class="mt-5">Your request has been submitted!</h2>
+                                <p class="lead mb-4">You'll receive an email after we handled your request.</p>
+                                <a href="../../index.html" class="btn btn-primary animate-hover"><i class="fas fa-chevron-left mr-3 pl-2 animate-left-4"></i>Back to homepage</a>
+                            </div>
+                        </div>
+                        <footer class="slideform-footer">
+                            <div class="slideform-progress-bar">
+                                <span></span>
+                            </div>
+                
+                            <div class="buttons">
+                                <button class="slideform-btn slideform-btn-prev"><i class="fas fa-arrow-circle-left"></i></button>
+                                <button class="slideform-btn slideform-btn-next"><i class="fas fa-arrow-circle-right"></i></button>
+                            </div>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+
+</body>
+
+</html>

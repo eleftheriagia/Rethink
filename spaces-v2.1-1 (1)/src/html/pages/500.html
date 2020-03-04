@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Spaces - 500 Error Page"
+    })
+</head>
+
+<body>
+        <main>
+            <section class="min-vh-100 d-flex align-items-center">
+                <div class="container py-5">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-12 col-lg-6">
+                            <div>
+                                <h4 class="mt-4 display-1 text-light">500</h4>
+                                <h1 class="display-3 font-weight-light">Something has gone <span class="font-weight-bold text-primary">seriously</span>
+                                    wrong</h1>
+                                <p class="lead my-4">It's always time for a coffee break. We should be back by the time you
+                                    finish your coffee.</p>
+                                <a class="btn btn-primary animate-hover" href="../../index.html"><i class="fas fa-chevron-left mr-3 pl-2 animate-left-3"></i>Go
+                                    back home</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 my-6 my-lg-0">
+                            <img class="img-fluid" src="../../assets/img/500-error.svg" alt="maintenance">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @@include('./_scripts.html', {
+            "path": "../.."
+        })
+
+</body>
+
+</html>

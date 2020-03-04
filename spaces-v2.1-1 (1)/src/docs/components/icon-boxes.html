@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "Spaces Documentation - Icon boxes"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" role="button"
+        data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+            
+            @@include('./_docs-sidebar.html', {
+                "path": "../..",
+                "docs_path": ".."
+            })
+
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-2 py-md-4">
+                        <div class="border-bottom">
+                            <h1>Icon Boxes</h1>
+                            <p class="lead text-dark">Icon Boxes are a great addition to pages for listing key unique
+                                selling points, or to highlight your website’s main areas of content. They can be used
+                                to draw attention to important facts, moments, add contact dates, information,
+                                and anything else you think of.</p>
+                        </div>
+                        <div id="example" class="my-5">
+                            <h5 class="mb-3">Example</h5>
+                            <p>Bootstrap includes several predefined button styles, each serving its own semantic
+                                purpose, with a few extras thrown in for more control.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-1" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-1" data-toggle="tab"
+                                                href="#tab-content-1" role="tab" aria-controls="tab-link-1"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-2" data-toggle="tab" href="#tab-content-2"
+                                                role="tab" aria-controls="tab-link-2" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                            data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent1">
+                                            <div class="tab-pane fade show active" id="tab-content-1" role="tabpanel"
+                                                aria-labelledby="tab-content-1">
+                                                <div class="col-md-4">
+                                                    <!-- Icon Boxes -->
+                                                    <div class="icon-box">
+                                                        <div class="icon icon-primary mb-4">
+                                                            <i class="far fa-lightbulb"></i>
+                                                        </div>
+                                                        <h5 class="icon-box-title">Ideas and Concepts</h5>
+                                                        <p class="icon-box-text">We work to figure out ways to help
+                                                            your business grow through all platforms.</p>
+                                                        <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                    </div>
+                                                    <!-- End of Icon Boxes -->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-2" role="tabpanel"
+                                                aria-labelledby="tab-content-2">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box&quot;&gt;
+    &lt;div class=&quot;icon icon-primary mb-4&quot;&gt;
+        &lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h5 class=&quot;icon-box-title&quot;&gt;Ideas and Concepts&lt;/h5&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="text-alignment" class="my-5">
+                            <h5 class="mb-3">Text alignment</h5>
+                            <p>Easily realign Icon Boxes text with <code class="text-primary">.text-left</code>, <code
+                                    class="text-danger">.text-center</code> and <code class="text-primary">.text-right</code>
+                                classes.
+                            </p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-2" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-3" data-toggle="tab"
+                                                href="#tab-content-3" role="tab" aria-controls="tab-link-3"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-4" data-toggle="tab" href="#tab-content-4"
+                                                role="tab" aria-controls="tab-link-4" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                            data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent2">
+                                            <div class="tab-pane fade show active" id="tab-content-3" role="tabpanel"
+                                                aria-labelledby="tab-content-3">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box">
+                                                            <div class="icon icon-primary mb-4">
+                                                                <i class="far fa-lightbulb"></i>
+                                                            </div>
+                                                            <h5 class="icon-box-title">Ideas and Concepts</h5>
+                                                            <p class="icon-box-text">We work to figure out ways to help
+                                                                your business grow through all platforms.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box text-center">
+                                                            <div class="icon icon-secondary mb-4">
+                                                                <i class="far fa-hand-point-right"></i>
+                                                            </div>
+                                                            <h5 class="icon-box-title">Powerful Techniques</h5>
+                                                            <p class="icon-box-text">We work to figure out ways to help
+                                                                your business grow through all platforms.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box text-right">
+                                                            <div class="icon icon-tertiary mb-4">
+                                                                <i class="far fa-user"></i>
+                                                            </div>
+                                                            <h5 class="icon-box-title">100% Satisfaction</h5>
+                                                            <p class="icon-box-text">We work to figure out ways to help
+                                                                your business grow through all platforms.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-4" role="tabpanel"
+                                                aria-labelledby="tab-content-4">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box&quot;&gt;
+    &lt;div class=&quot;icon icon-primary mb-4&quot;&gt;
+        &lt;i class=&quot;far fa-lightbulb&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h5 class=&quot;icon-box-title&quot;&gt;Ideas and Concepts&lt;/h5&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;
+&lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box text-center&quot;&gt;
+    &lt;div class=&quot;icon icon-secondary mb-4&quot;&gt;
+        &lt;i class=&quot;far fa-hand-point-right&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h5 class=&quot;icon-box-title&quot;&gt;Powerful Techniques&lt;/h5&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;                                                           
+ &lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box text-right&quot;&gt;
+    &lt;div class=&quot;icon icon-tertiary mb-4&quot;&gt;
+        &lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h5 class=&quot;icon-box-title&quot;&gt;100% Satisfaction&lt;/h5&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;
+
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="side-icons" class="my-5">
+                            <h5 class="mb-3">Side icons</h5>
+                            <p>You can put the icon to the right or left of the text with <a href="https://getbootstrap.com/docs/4.3/utilities/flex/">Flexbox</a></p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-9" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-17" data-toggle="tab"
+                                                href="#tab-content-17" role="tab" aria-controls="tab-link-17"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-18" data-toggle="tab" href="#tab-content-18"
+                                                role="tab" aria-controls="tab-link-18" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                            data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent9">
+                                            <div class="tab-pane fade show active" id="tab-content-17" role="tabpanel"
+                                                aria-labelledby="tab-content-17">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box">
+                                                            <div class="d-flex px-3">
+                                                                <div>
+                                                                    <div class="icon icon-secondary mb-5">
+                                                                        <i class="fas fa-chess-rook"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pl-4">
+                                                                    <h6 class="icon-box-title">Ideas and Concepts</h6>
+                                                                    <p class="icon-box-text">We work to figure out ways
+                                                                        to help your business grow through all
+                                                                        platforms.
+                                                                    </p>
+                                                                    <a href="#" class="btn btn-link text-dark">Read
+                                                                        more</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box text-right">
+                                                            <div class="d-flex px-3">
+                                                                <div class="pr-4">
+                                                                    <h6 class="icon-box-title">Ideas and Concepts</h6>
+                                                                    <p class="icon-box-text">We work to figure out ways
+                                                                        to help your business grow through all
+                                                                        platforms.
+                                                                    </p>
+                                                                    <a href="#" class="btn btn-link text-dark">Read
+                                                                        more</a>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="icon icon-secondary mb-5">
+                                                                        <i class="far fa-lightbulb"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-18" role="tabpanel"
+                                                aria-labelledby="tab-content-18">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                        <div id="sizes" class="my-5">
+                            <h5 class="mb-3">Sizes</h5>
+                            <p>Fancy larger or smaller icons? Add <code class="text-primary">.icon-lg</code> or <code
+                                    class="text-danger">.icon-sm</code> for additional sizes.</p>
+                            <!-- Tab -->
+                            <div class="my-5">
+                                <!-- Tab Nav -->
+                                <div class="nav-wrapper position-relative p-0">
+                                    <ul class="nav nav-tabs flex-column flex-md-row" id="tab-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0 active" id="tab-link-5" data-toggle="tab"
+                                                href="#tab-content-5" role="tab" aria-controls="tab-link-5"
+                                                aria-selected="true">Result</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mb-sm-3 mb-md-0" id="tab-link-6" data-toggle="tab" href="#tab-content-6"
+                                                role="tab" aria-controls="tab-link-6" aria-selected="false">Html</a>
+                                        </li>
+                                        <span class="badge badge-md badge-primary copy-docs" data-toggle="tooltip"
+                                            data-placement="top" title="Copy code">Copy</span>
+                                    </ul>
+                                </div>
+                                <!-- End of Tab Nav -->
+                                <div class="card">
+                                    <div class="card-body px-0 pb-0">
+                                        <div class="tab-content" id="tabcontent3">
+                                            <div class="tab-pane fade show active" id="tab-content-5" role="tabpanel"
+                                                aria-labelledby="tab-content-5">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box">
+                                                            <div class="icon icon-shape icon-lg icon-shape-tertiary mb-4">
+                                                                <i class="fas fa-globe-europe"></i>
+                                                            </div>
+                                                            <h5 class="icon-box-title">Ideas and Concepts</h5>
+                                                            <p class="icon-box-text">We work to figure out ways to help
+                                                                your business grow through all platforms.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box text-center">
+                                                            <div class="icon icon-shape icon-shape-tertiary mb-4">
+                                                                <i class="fas fa-globe-europe"></i>
+                                                            </div>
+                                                            <h6 class="icon-box-title">Powerful Techniques</h6>
+                                                            <p class="icon-box-text">We work to figure out ways to help
+                                                                your business grow through all platforms.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <!-- Icon Boxes -->
+                                                        <div class="icon-box text-right">
+                                                            <div class="icon icon-shape icon-sm icon-shape-tertiary mb-4">
+                                                                <i class="fas fa-globe-europe"></i>
+                                                            </div>
+                                                            <h6 class="icon-box-title">100% Satisfaction</h6>
+                                                            <p class="icon-box-text">We work to figure out ways to help
+                                                                your business grow through all platforms.</p>
+                                                            <a href="#" class="btn btn-link text-dark">Read more</a>
+                                                        </div>
+                                                        <!-- End of Icon Boxes -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-content-6" role="tabpanel"
+                                                aria-labelledby="tab-content-6">
+                                                <div>
+                                                    <pre>
+                                                        <code class="language-html">
+&lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box&quot;&gt;
+    &lt;div class=&quot;icon icon-shape icon-lg icon-shape-secondary mb-4&quot;&gt;
+        &lt;i class=&quot;fas fa-globe-europe&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h5 class=&quot;icon-box-title&quot;&gt;Ideas and Concepts&lt;/h5&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;
+
+&lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box text-center&quot;&gt;
+    &lt;div class=&quot;icon icon-shape icon-shape-secondary mb-4&quot;&gt;
+        &lt;i class=&quot;fas fa-globe-europe&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h6 class=&quot;icon-box-title&quot;&gt;Powerful Techniques&lt;/h6&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;
+
+&lt;!-- Icon Boxes --&gt;
+&lt;div class=&quot;icon-box text-right&quot;&gt;
+    &lt;div class=&quot;icon icon-shape icon-sm icon-shape-secondary mb-4&quot;&gt;
+        &lt;i class=&quot;fas fa-globe-europe&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h6 class=&quot;icon-box-title&quot;&gt;100% Satisfaction&lt;/h6&gt;
+    &lt;p class=&quot;icon-box-text&quot;&gt;We work to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-link text-dark&quot;&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- End of Icon Boxes --&gt;
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Tab -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#example" class="nav-link" data-smooth-scroll>Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#text-alignment" class="nav-link " data-smooth-scroll>Text alignment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#side-icons" class="nav-link " data-smooth-scroll>Side icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sizes" class="nav-link " data-smooth-scroll>Choose your side</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+
+</body>
+
+</html>

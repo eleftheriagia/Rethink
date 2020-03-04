@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./_head.html', {
+        "path": "..",
+        "title": "Spaces Documentation - Changelog"
+    })
+</head>
+
+<body>
+    <a href="#doc-index" class="btn btn-lg btn-primary btn-block rounded-0 d-lg-none" data-toggle="collapse" role="button" data-target="#doc-index" aria-expanded="false" aria-controls="doc-index">
+        <svg class="icon fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" />
+        </svg>
+        <span class="h6 text-white">Menu</span>
+    </a>
+    <section class="container-fluid py-4">
+        <div class="row">
+        
+            @@include('./_docs-sidebar.html', {
+                "path": "..",
+                "docs_path": "."
+            })
+
+            <!-- Content -->
+            <div class="col-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 px-xl-5 px-lg-3 px-md-3 py-md-5">
+                        <div class="border-bottom">
+                            <h1>Changelog</h1>
+                            <p class="lead text-dark">We keep track of version changes here</p>
+                        </div>
+                        <div class="my-5 mb-5">
+                            <h5 class="mb-3">Version 1.0 - 2019-30-09</h5>
+                            <ul class="mb-5">
+                                <li>Initial release files</li>
+                            </ul>
+                            <h5 class="mb-3">Version 1.1 - 2019-03-10</h5>
+                            <ul class="mb-5">
+                                <li>Improved navigation bar icons</li>
+                                <li>Removed sticky navbar on all spaces page since it overlayed the sticky sidebar</li>
+                                <li>Fix broken path for logo in documentation</li>
+                            </ul>
+                        </div>
+                        <div class="my-5 mb-5">
+                            <h5 class="mb-3">Version 1.2 - 2019-22-10</h5>
+                            <ul class="mb-5">
+                                <li>Removed vendor folder and included all third party plugins through npm</li>
+                                <li>Improved recent news widget</li>
+                                <li>Improved tablet/mobile wrappings for some elements</li>
+                                <li>Fix submit space first step progress bar not showing anything</li>
+                                <li>Fix a few 404 links</li>
+                                <li>Slightly redesign single blog page</li>
+                                <li>Fix reply comment collapse "hick-up"</li>
+                            </ul>
+                        </div>
+                        <div class="my-5 mb-5">
+                            <h5 class="mb-3">Version 1.2.1 - 2019-22-10</h5>
+                            <ul class="mb-5">
+                                <li>Fixed 404 for blog cards in documentation</li>
+                                <li>Fix some missing images from documentation</li>
+                            </ul>
+                        </div>
+                        <div class="my-5 mb-5">
+                            <h5 class="mb-3">Version 2.0.0 - 2019-10-12</h5>
+                            <ul class="mb-5">
+                                <li>Made filter sidebar widgets collapsable to allow more filters</li>
+                                <li>Made datepickers a range to select periods</li>
+                                <li>Big changes to the folder structure and the way files are server through BrowserSync; We created a .temp folder</li>
+                                <li>Integrated gulp-file-include to include footers, navigation bars, head's into the templates to prevent repeating ourselves</li>
+                                <li>Created a new blank page</li>
+                                <li>Added filters to mobile</li>
+                                <li>Added "load more" functionality to the profile page</li>
+                                <li>Removed pricing call to action from all pages except the homepage</li>
+                                <li>Added My account page</li>
+                                <li>Added My listings page</li>
+                                <li>Added Edit Listing page</li>
+                            </ul>
+                        </div>
+                        <div class="my-5 mb-5">
+                            <h5 class="mb-3">Version 2.1 - 2019-11-29</h5>
+                            <ul class="mb-5">
+                                <li>W3C validated all pages</li>
+                                <li>Fixed mobile filter toggling in all spaces page</li>
+                                <li>Reduced spacing for homepage on mobile devices</li>
+                                <li>Fixed some IE 11 problems</li>
+                                <li>Fixed toggling issue on profile page</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block py-md-1 doc-sidebar border-left">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#getting-started" class="nav-link " data-smooth-scroll>Changelog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of content -->
+            </div>
+        </div>
+    </section>
+    
+    @@include('./_scripts.html', {
+        "path": ".."
+    })
+
+</body>
+
+</html>
